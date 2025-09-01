@@ -1,4 +1,4 @@
-
+import Quote from "./Quote";
 const Hero=()=>{
 return (
     <div className="hero-section">
@@ -11,9 +11,7 @@ return (
           
         </div>
 
-        {/* <div className="hero-img">
-            <img src="https://i.pinimg.com/1200x/9c/87/63/9c8763d10df678bf8b8d99c276b881e7.jpg" alt=""  />
-        </div> */}
+        <Quote/>
   </div>
 )
 }

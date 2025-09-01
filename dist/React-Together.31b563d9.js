@@ -18683,40 +18683,49 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _quote = require("./Quote");
+var _quoteDefault = parcelHelpers.interopDefault(_quote);
 const Hero = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "hero-section",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "hero-text",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Welcome to BOOKSHELF"
-                }, void 0, false, {
-                    fileName: "src/components/Hero.js",
-                    lineNumber: 8,
-                    columnNumber: 11
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Your Online Library"
-                }, void 0, false, {
-                    fileName: "src/components/Hero.js",
-                    lineNumber: 9,
-                    columnNumber: 11
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    children: "Explore Now"
-                }, void 0, false, {
-                    fileName: "src/components/Hero.js",
-                    lineNumber: 10,
-                    columnNumber: 11
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Hero.js",
-            lineNumber: 7,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "hero-text",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Welcome to BOOKSHELF"
+                    }, void 0, false, {
+                        fileName: "src/components/Hero.js",
+                        lineNumber: 8,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Your Online Library"
+                    }, void 0, false, {
+                        fileName: "src/components/Hero.js",
+                        lineNumber: 9,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        children: "Explore Now"
+                    }, void 0, false, {
+                        fileName: "src/components/Hero.js",
+                        lineNumber: 10,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Hero.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _quoteDefault.default), {}, void 0, false, {
+                fileName: "src/components/Hero.js",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Hero.js",
         lineNumber: 4,
         columnNumber: 5
@@ -18732,6 +18741,91 @@ $RefreshReg$(_c, "Hero");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire921d", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Quote":"7dABv"}],"7dABv":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$91a1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$91a1.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$91a1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Quote = ()=>{
+    _s();
+    const [quoteText, setquoteText] = (0, _react.useState)({});
+    (0, _react.useEffect)(()=>{
+        const fetchData = async ()=>{
+            try {
+                const res = await fetch("https://recite.onrender.com/api/v1/random");
+                const data = await res.json();
+                console.log(data);
+                setquoteText({
+                    quote: data.quote,
+                    author: data.author,
+                    book: data.book
+                });
+            } catch (error) {
+                console.error("Error fetching data", error);
+            }
+        };
+        fetchData();
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "quote",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    '"',
+                    quoteText.quote ? quoteText.quote : "A reader lives a thousand lives before he dies, the man who never reads lives only one",
+                    '"'
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Quote.js",
+                lineNumber: 27,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: [
+                    "By- ",
+                    quoteText.author ? quoteText.author : "George R.R. Martin"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Quote.js",
+                lineNumber: 31,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    "Book- ",
+                    quoteText.book ? quoteText.book : "A Dance with Dragons"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Quote.js",
+                lineNumber: 32,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Quote.js",
+        lineNumber: 26,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Quote, "QPEmfOTX47OGOBn8ncdfj7E5SuE=");
+_c = Quote;
+exports.default = Quote;
+var _c;
+$RefreshReg$(_c, "Quote");
+
+  $parcel$ReactRefreshHelpers$91a1.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequire921d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=React-Together.31b563d9.js.map
