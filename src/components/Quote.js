@@ -6,7 +6,7 @@ const Quote= ()=>{
           try {
             const res = await fetch("https://recite.onrender.com/api/v1/random");
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
             setquoteText({
               quote: data.quote,
               author: data.author,
