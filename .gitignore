@@ -1,1 +1,8 @@
-/node_modules
+.parcel-cache/
+dist/
+node_modules/
+# Parcel cache
+.parcel-cache/
+
+# Build output
+dist/
