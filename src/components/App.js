@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Body from "./Body";
 import Shop from "./Shop";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };

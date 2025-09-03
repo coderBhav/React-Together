@@ -9,7 +9,7 @@ const Header = () => {
         <h1 className="heading">Book Store</h1>
       </div>
       <div className="search-container">
-        <input className="Search" type="text" placeholder="Search for books"/>
+        <input className="Search" type="text" placeholder="Search books..."/>
         <button className="search-btn">Search</button>
       </div>
         <ul className="links">
