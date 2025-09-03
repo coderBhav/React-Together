@@ -1,5 +1,6 @@
 import React from "react";
 import { Logo } from "../utils/Logo";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
@@ -8,16 +9,16 @@ const Header = () => {
         <h1 className="heading">Book Store</h1>
       </div>
       <div className="search-container">
-        <input className="Search" type="text" placeholder="Search for books"/>
+        <input className="Search" type="text" placeholder="Search books..."/>
         <button className="search-btn">Search</button>
       </div>
         <ul className="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <Link to="/Home"><li>Home</li></Link>
+          <Link to="/Shop"><li>Shop</li></Link>
+          <Link to="/New"><li>New Arrivals</li></Link>
+          <Link to="/BestSeller"><li>Best Sellers</li></Link>
+          <Link to="/About"><li>About Us</li></Link>
+          <Link to="/Contact"><li>Contact</li></Link>
         </ul>
     </div>
   );

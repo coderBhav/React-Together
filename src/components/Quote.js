@@ -25,7 +25,7 @@ const Quote= ()=>{
         
         <div className="quote">
         <h1 >
-        "{quoteText.quote?quoteText.quote:"A reader lives a thousand lives before he dies, the man who never reads lives only one"}"
+        "{quoteText.quote?quoteText.quote:"In everybody’s life there’s a point of no return. And in a very few cases, a point where you can’t go forward anymore. And when we reach that point, all we can do is quietly accept the fact. That’s how we survive."}"
 
         </h1>
         <h2>By- {quoteText.author?quoteText.author:"George R.R. Martin"}</h2>

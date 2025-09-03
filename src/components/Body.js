@@ -4,7 +4,6 @@ import Trending from "./Trending";
 const Body=()=>{
     return (
     <div className="body-container">
-          
         <Hero/>
         <Trending/>
     </div>

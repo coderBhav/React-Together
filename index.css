@@ -16,40 +16,57 @@ body {
     position: relative;
     z-index: 1000;
 }
+
 .logo-container {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     gap: 10px;
+=======
+    gap: 12px;
+>>>>>>> recover-code
 }
+
 .logo-img {
+<<<<<<< HEAD
+=======
+    border-radius: 50%;
+>>>>>>> recover-code
     width: 60px;
     height: 60px;
-    object-fit: contain;
+    object-fit: cover;
+    border: 2px solid #A67C52;
 }
+
 .heading {
-    display: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    color: #333;
+    color: #4B3621;
 }
+
 .search-container {
     display: flex;
     gap: 8px;
 }
+
 .Search {
     padding: 7px 14px;
-    border: 1px solid #f1efef;
+    border: 1px solid #D9CBB6;
     border-radius: 8px;
     font-size: 1rem;
     outline: none;
     transition: all 0.3s ease;
     width: 220px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    background-color: #FFF8E7;
+    color: #4B3621;
 }
+
 .Search:focus {
-    border-color: rgb(206, 199, 199);
-    box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+    border-color: #E6A663; 
+    box-shadow: 0 0 5px rgba(230,166,99,0.3);
 }
+
 .search-btn {
     padding: 7px 14px;
     border: none;
@@ -58,20 +75,29 @@ body {
     font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.search-btn:hover {
+    background-color: #D79B5E;
+}
+
 .links {
     display: flex;
     gap: 25px;
 }
+
 .links li {
     list-style: none;
 }
+
 .links li a {
     text-decoration: none;
     color: #555;
     font-weight: 500;
     transition: color 0.3s, transform 0.2s;
 }
+
 .links li a:hover {
     color: #0077ff;
     transform: translateY(-2px);
@@ -112,6 +138,22 @@ body {
         display: block;
         text-align: center;
     }
+    .book-card,
+    .shimmer-card {
+      width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+  .book-card,
+  .shimmer-card {
+    width: 90%;
+  }
+
+  .select-genre select {
+    width: 80%;
+    margin-top: 5px;
+  }
 }
 
 .hero-section {
