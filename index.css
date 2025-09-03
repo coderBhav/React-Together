@@ -20,18 +20,10 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     gap: 10px;
-=======
-    gap: 12px;
->>>>>>> recover-code
 }
 
 .logo-img {
-<<<<<<< HEAD
-=======
-    border-radius: 50%;
->>>>>>> recover-code
     width: 60px;
     height: 60px;
     object-fit: cover;
