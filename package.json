@@ -2,7 +2,7 @@
   "name": "react_together",
   "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {

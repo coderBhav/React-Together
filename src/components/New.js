@@ -1,7 +1,9 @@
+import Loading from "./Loading";
+
 const New=()=>{
     return(
         <div>
-            <h1>We are New</h1>
+            <Loading/>
         </div>
     );
 };

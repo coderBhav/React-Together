@@ -7,17 +7,29 @@ import BestSeller from "./BestSeller";
 import About from "./About";
 import Contact from "./Contact";
 import { createBrowserRouter,Outlet } from "react-router-dom";
-import About from "./About";
 import Issues from "./Issues";
+import useCheckStatus from "../utils/useCheckStatus";
+import Loading from "./Loading";
 
 const App = () => {
-  return (
+  const online=useCheckStatus();
+  if(!online){
+    return(
+      <div>
+        <Loading/>
+      </div>
+    );
+  }
+ else{
+   return (
     <div>
       <Header />
       <Outlet/>
     </div>
   );
+ }
 };
+
 export const rout=createBrowserRouter(
   [
     {
