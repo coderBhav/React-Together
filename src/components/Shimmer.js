@@ -1,9 +1,9 @@
 const Shimmer = () => {
     return (
       <div className="trending-card shimmer-card">
-        <div className="shimmer-image"></div>
-        <div className="shimmer-title"></div>
-        <div className="shimmer-author"></div>
+        <div className="shimmer-cover"></div>
+        <div className="shimmer-name"></div>
+        <div className="shimmer-writer"></div>
       </div>
     );
   };
