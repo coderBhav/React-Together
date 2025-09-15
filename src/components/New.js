@@ -1,10 +1,17 @@
-import Loading from "./Loading";
+import Bio from "./Bio";
+import Fiction from "./Fiction";
+import Nonfic from "./Nonfic";
+import Romantic from "./Romantic";
 
-const New=()=>{
+const New = () => {
     return(
         <div>
-            <Loading/>
+            <Fiction/>
+            <Romantic/>
+            <Bio/>
+            <Nonfic/>
         </div>
-    );
+    )
 };
+
 export default New;

@@ -1,15 +1,17 @@
 import React from "react";
 import { Logo } from "../utils/Logo";
 import { Link } from "react-router-dom";
+import Placeholder from "./Placeholder";
 const Header = () => {
+  const type="text";
   return (
     <div className="header">
       <div className="logo-container">
         <img className="logo-img" src={Logo} alt="Bookstore Logo"/>
-        <h1 className="heading">Book Store</h1>
+        <h1 className="heading">RefuGrow</h1>
       </div>
       <div className="search-container">
-        <input className="Search" type="text" placeholder="Search books..."/>
+        <input className="Search" type={type} placeholder={Placeholder({type})}/>
         <button className="search-btn">Search</button>
       </div>
         <ul className="links">
