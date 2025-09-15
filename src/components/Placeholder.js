@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Placeholder = ({text}) => {
-  const words = ["S","e","a","r","c","h", " ","f","o","r"," ", "b","o","o","k","s"];
+  const words = ["S","e","a","r","c","h"," ", "b","o","o","k","s"];
   const [placeholder, setPlaceholder] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
 
@@ -9,7 +9,7 @@ const Placeholder = ({text}) => {
     const interval = setInterval(() => {
       setPlaceholder((prev) => prev + (prev ? " " : "") + words[wordIndex]);
       setWordIndex((prev) => prev + 1);
-    }, 500); // 1 second delay between words
+    }, 150);
 
     if (wordIndex >= words.length) clearInterval(interval);
 
