@@ -17,12 +17,12 @@ const Trending = () => {
         {trendingBooks.length > 0
           ? trendingBooks.map((book) => {
               return (
-                <div className="trending-card" key={book.id}>
+                <div className="trending-card" key={book.id} onClick={() => setSelectedPdf(book.pdf)}
+                style={{ cursor: "pointer" }}>
                   <img
                     src={book.cover}
                     alt={book.title}
-                    onClick={() => setSelectedPdf(book.pdf)}
-                    style={{ cursor: "pointer" }}
+                    
                   />
                   <h1>{book.title ? book.title : "title"}</h1>
                   <h2>{book.author ? book.author : "author"}</h2>
@@ -35,7 +35,7 @@ const Trending = () => {
       </div>
       {selectedPdf && (
         <Pdf selectedPdf={selectedPdf} setSelectedPdf={setSelectedPdf}/>
-      )}
+       )} 
 
 
     </>

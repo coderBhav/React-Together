@@ -685,3 +685,82 @@ a:hover {
   to { opacity: 1; transform: scale(1); }
 }
 
+/* pdf */
+.pdf-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pdf-widget {
+  position: relative;
+  width: 70%;
+  max-width: 900px;
+  max-height: 90vh; /* stays within viewport */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* hide anything outside modal edges */
+}
+
+.pdf-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+}
+
+.pdf-container {
+  flex: 1; /* take remaining space inside modal */
+  width: 95%;
+  overflow-y: auto; /* scroll vertically if PDF is tall */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* top align pages */
+  background-color: white;
+  padding: 10px 0;
+}
+
+.pdf-page {
+  display: block;
+  width: 100%;    /* scale to container width */
+  max-width: 100%;
+  height: auto;   /* maintain aspect ratio */
+  margin: 10px 0;
+  scale: (1.5);
+}
+
+.pdf-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.pdf-button {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pdf-page-number {
+  margin: 0;
+  font-size: 16px;
+}
