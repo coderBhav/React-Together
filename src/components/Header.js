@@ -10,10 +10,13 @@ const Header = () => {
         <img className="logo-img" src={Logo} alt="Bookstore Logo"/>
         <h1 className="heading">RefuGrow</h1>
       </div>
+      
       <div className="search-container">
-        <input className="Search" type={type} placeholder={Placeholder({type})}/>
+        <input className="Search" type={type} placeholder={Placeholder({type})} value=""/>
         <button className="search-btn">Search</button>
       </div>
+
+
         <ul className="links">
           <Link to="/Home"><li>Home</li></Link>
           <Link to="/Shop"><li>Shop</li></Link>
