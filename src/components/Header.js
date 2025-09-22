@@ -22,7 +22,7 @@ const Header = () => {
       <ul className="links">
         <Link to="/Home"><li>Home</li></Link>
         <Link to="/Shop"><li>Shop</li></Link>
-        <Link to="/New"><li>New Arrivals</li></Link>
+        <Link to="/New"><li>Categories</li></Link>
         <Link to="/BestSeller"><li>Best Sellers</li></Link>
         <Link to="/About"><li>About Us</li></Link>
         <Link to="/Contact"><li>Contact</li></Link>

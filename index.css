@@ -489,6 +489,7 @@ a:hover {
   margin-bottom: 16px;
   color: #222;
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
 }
 
 .fic-list {
