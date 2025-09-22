@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Logo } from "../utils/Logo";
 import { Link } from "react-router-dom";
-import Placeholder from "./Placeholder";
+
+import Search from "./Search";
 
 const Header = () => {
-  const type = "text";
-  const [search, setSearch] = useState("");
+ 
 
   return (
     <div className="header">
@@ -14,10 +14,7 @@ const Header = () => {
         <h1 className="heading">RefuGrow</h1>
       </div>
 
-      <div className="search-container">
-        <input className="Search" type={type} placeholder={Placeholder({ type })} value={search} onChange={(e) => setSearch(e.target.value)}/>
-        <button className="search-btn">Search</button>
-      </div>
+      <Search/>
 
       <ul className="links">
         <Link to="/Home"><li>Home</li></Link>

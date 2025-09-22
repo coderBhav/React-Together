@@ -10,6 +10,7 @@ import { createBrowserRouter,Outlet } from "react-router-dom";
 import Issues from "./Issues";
 import useCheckStatus from "../utils/useCheckStatus";
 import Loading from "./Loading";
+import Test from "./Test";
 
 
 const App = () => {
@@ -64,6 +65,10 @@ export const rout=createBrowserRouter(
       {
         path:"/contact",
         element:<Contact/>
+      },
+      {
+        path:"/test",
+        element:<Test/>
       },
     ],
     errorElement:<Issues/>

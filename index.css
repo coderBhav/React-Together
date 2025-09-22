@@ -49,7 +49,7 @@ body {
     font-size: 1rem;
     outline: none;
     transition: all 0.3s ease;
-    width: 220px;
+    width: 400px;
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
     background-color: #FFF8E7;
     color: #4B3621;
@@ -764,4 +764,17 @@ a:hover {
 .pdf-page-number {
   margin: 0;
   font-size: 16px;
+}
+
+.resultBox{
+  position: absolute;
+ background-color: white;
+ border: 1px solid gray;
+ padding: 5px;
+ width: 400px;
+}
+
+.resultBox>li{
+  list-style-type: none;
+  
 }
