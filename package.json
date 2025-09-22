@@ -1,8 +1,10 @@
 {
   "name": "react_together",
   "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "start": "parcel index1.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
@@ -24,5 +26,4 @@
       }
     }
   }
-  
 }
